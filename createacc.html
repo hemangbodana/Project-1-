@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Account</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Additional styles */
+    body {
+      background-image: url('https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F4b%2F2b%2Fd0%2F4b2bd03fdb4ffa0fc6506585dbc5e5de.jpg&tbnid=SrNY0MwZrvZxjM&vet=12ahUKEwjix6X05YGDAxV-b2wGHYjmBMAQMygDegQIARBW..i&imgrefurl=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F850265604633610953%2F&docid=GDAUYW64K8BIKM&w=2560&h=1600&q=Milky%20Way%20planets%20background%20image&hl=en&ved=2ahUKEwjix6X05YGDAxV-b2wGHYjmBMAQMygDegQIARBW'); 
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="flex h-screen items-center justify-center">
+    <div class="bg-white p-8 rounded-lg shadow-lg">
+      <h1 class="text-3xl font-semibold mb-6 text-center">Create Account</h1>
+      <form id="createAccountForm" class="space-y-4">
+        <div>
+          <label for="username" class="block text-sm font-medium text-gray-700">Username</label>
+          <input type="text" id="username" name="username" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+        </div>
+        <div>
+          <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+          <input type="email" id="email" name="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+        </div>
+        <div>
+          <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+          <input type="password" id="password" name="password" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+        </div>
+        <div>
+          <button id="createAccountBtn" type="submit" class="w-full bg-indigo-500 text-white rounded-md py-2 transition duration-300 ease-in-out hover:bg-indigo-600 focus:outline-none focus:ring focus:ring-indigo-200 focus:ring-opacity-50">Create Account</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const createAccountBtn = document.getElementById('createAccountBtn');
+
+    createAccountBtn.addEventListener('mouseover', function() {
+      this.classList.remove('bg-indigo-500');
+      this.classList.add('bg-indigo-600');
+    });
+
+    createAccountBtn.addEventListener('mouseout', function() {
+      this.classList.remove('bg-indigo-600');
+      this.classList.add('bg-indigo-500');
+    });
+  </script>
+</body>
+</html>
